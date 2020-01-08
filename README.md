@@ -61,5 +61,9 @@
     - Returns results ready for output (using flag)
  - Output errors and/or successful results to a log file
  
+#### Version 1.1 - Bug fixes
+ - Fixed general bugs
+ - Fixed a bug that prevented paths with spaces to be properly scanned
+ 
 ## TO DO
  - Refactor logging blocks to make maintenance easier. 

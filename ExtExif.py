@@ -117,10 +117,8 @@ def enum_files(folder_path):
     for root, dirs, files in os.walk(folder_path, topdown=True):
         for file in files:
             # Generate the absolute/relative path for each file
-            file_path = os.path.join(root, file)
-            # File exists (it should)
-            if os.path.exists(file_path):
-                f_list.append(file_path)
+            file_path = str(os.path.join(root, file)).replace(" ","\\ ")
+            f_list.append(file_path)
 
     # Available files to scan
     if log_all_flag and len(f_list) > 0:
